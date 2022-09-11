@@ -2,7 +2,7 @@ import streamlit as st
 
 st.header("Kelly Calculator")
 
-frac = st.slider('Fraction', min_value = float(0), max_value=float(1), value = float(0.25), step= 0.25, help=("Suggest 0.25 to bein giwht. Kelly 1.0 is hardcore risk level"))
+frac = st.slider('Fraction', min_value = float(0), max_value=float(1), value = float(0.25), step= 0.25, help=("Suggest 0.25 to begin with. Kelly 1.0 is hardcore risk level"))
 bookOdds = st.number_input('Bookmaker Odds: ', min_value=float(1.0), help="Use Decimal Odds")
 fairOdds = st.number_input('Fair Odds: ', min_value=(1.0), help="Use Decimal Odds")
 bankRoll = st.number_input('Bankroll: ')
